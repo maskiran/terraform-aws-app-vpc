@@ -18,10 +18,10 @@
 * `region` - AWS Region, default `us-east-1`
 * `zones` - Availability zones in the above region, default `us-east-1b`
 * `vpc_cidr` - Subnet CIDR, defaults to `10.0.0.0/16`
-* `subnet_bits` - Additional bits to use for each of the subnets. Final subnet would be the mask of VPC CIDR + the value provided for this variable, default 8 
+* `subnet_bits` - Additional bits to use for each of the subnets. Final subnet would be the mask of VPC CIDR + the value provided for this variable, default 8
 * `vm_count_per_zone` - Number of VM instances per Zone, default 1
 * `key_name` - SSH Keypair Name
-* `instance_type` - Instance type of the VM, default `e2-medium`
+* `instance_type` - Instance type of the VM, default `t3a.medium`
 * `external_ips` - List of IPs for which the SSH access is enabled (used in the ssh ingress firewall rule), by default add the current IP. These are the additional IPs
 
 ## Outputs
